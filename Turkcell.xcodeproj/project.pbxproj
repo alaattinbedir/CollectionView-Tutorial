@@ -23,6 +23,7 @@
 		84A6C4661FC184F000ACC036 /* TurkcellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4651FC184F000ACC036 /* TurkcellTests.m */; };
 		84A6C4711FC184F000ACC036 /* TurkcellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4701FC184F000ACC036 /* TurkcellUITests.m */; };
 		84AC8C471FC1E4E700F38143 /* MyDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC8C461FC1E2ED00F38143 /* MyDataController.m */; };
+		84AC8C501FC1EAA100F38143 /* ProductMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC8C4F1FC1EAA100F38143 /* ProductMO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		84A6C4721FC184F000ACC036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84AC8C451FC1E2ED00F38143 /* MyDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDataController.h; sourceTree = "<group>"; };
 		84AC8C461FC1E2ED00F38143 /* MyDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDataController.m; sourceTree = "<group>"; };
+		84AC8C4E1FC1EAA100F38143 /* ProductMO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductMO.h; sourceTree = "<group>"; };
+		84AC8C4F1FC1EAA100F38143 /* ProductMO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductMO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +251,8 @@
 			children = (
 				84AC8C451FC1E2ED00F38143 /* MyDataController.h */,
 				84AC8C461FC1E2ED00F38143 /* MyDataController.m */,
+				84AC8C4E1FC1EAA100F38143 /* ProductMO.h */,
+				84AC8C4F1FC1EAA100F38143 /* ProductMO.m */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 				846087251FC191C500F20E12 /* ProductPresenter.m in Sources */,
 				84A6C44E1FC184F000ACC036 /* ProductsViewController.m in Sources */,
 				846087211FC18ED500F20E12 /* ProductInteractor.m in Sources */,
+				84AC8C501FC1EAA100F38143 /* ProductMO.m in Sources */,
 				84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */,
 				846087291FC191E900F20E12 /* Product.m in Sources */,
 				84A6C45C1FC184F000ACC036 /* main.m in Sources */,

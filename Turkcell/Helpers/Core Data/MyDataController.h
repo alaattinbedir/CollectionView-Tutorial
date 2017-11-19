@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "ProductMO.h"
 
 @interface MyDataController : NSObject
 
@@ -16,7 +17,8 @@
 + (instancetype)sharedClient;
 - (void)initializeCoreData;
 -(void)showMessage:(NSString*)message withTitle:(NSString *)title;
-//- (void) saveProgram:(MetaProgram *)program withCourse:(MetaCourse *)course;
-//- (void) saveCourse:(MetaCourse *)course;
+- (void) saveProduct:(ProductMO *)product;
+- (ProductMO*) getProduct:(NSNumber*) productId;
+- (NSArray*) getProducts;
 
 @end
