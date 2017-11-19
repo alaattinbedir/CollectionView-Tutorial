@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8460871C1FC1896A00F20E12 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8460871B1FC1896A00F20E12 /* ProductCell.m */; };
 		846087211FC18ED500F20E12 /* ProductInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 846087201FC18ED500F20E12 /* ProductInteractor.m */; };
+		846087251FC191C500F20E12 /* ProductPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 846087241FC191C500F20E12 /* ProductPresenter.m */; };
+		846087291FC191E900F20E12 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 846087281FC191E900F20E12 /* Product.m */; };
 		84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C44A1FC184F000ACC036 /* AppDelegate.m */; };
 		84A6C44E1FC184F000ACC036 /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C44D1FC184F000ACC036 /* ProductsViewController.m */; };
 		84A6C4511FC184F000ACC036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6C44F1FC184F000ACC036 /* Main.storyboard */; };
@@ -42,6 +44,10 @@
 		8460871B1FC1896A00F20E12 /* ProductCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductCell.m; sourceTree = "<group>"; };
 		8460871F1FC18ED500F20E12 /* ProductInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductInteractor.h; sourceTree = "<group>"; };
 		846087201FC18ED500F20E12 /* ProductInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductInteractor.m; sourceTree = "<group>"; };
+		846087231FC191C500F20E12 /* ProductPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductPresenter.h; sourceTree = "<group>"; };
+		846087241FC191C500F20E12 /* ProductPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductPresenter.m; sourceTree = "<group>"; };
+		846087271FC191E900F20E12 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		846087281FC191E900F20E12 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		84A6C4461FC184F000ACC036 /* Turkcell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turkcell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6C4491FC184F000ACC036 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84A6C44A1FC184F000ACC036 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +119,24 @@
 			path = Interactors;
 			sourceTree = "<group>";
 		};
+		846087221FC191AA00F20E12 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				846087231FC191C500F20E12 /* ProductPresenter.h */,
+				846087241FC191C500F20E12 /* ProductPresenter.m */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		846087261FC191D000F20E12 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				846087271FC191E900F20E12 /* Product.h */,
+				846087281FC191E900F20E12 /* Product.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		84A6C43D1FC184F000ACC036 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +160,8 @@
 		84A6C4481FC184F000ACC036 /* Turkcell */ = {
 			isa = PBXGroup;
 			children = (
+				846087261FC191D000F20E12 /* Entities */,
+				846087221FC191AA00F20E12 /* Presenters */,
 				8460871E1FC18E9700F20E12 /* Interactors */,
 				8460871D1FC18E2E00F20E12 /* View Controllers */,
 				846087191FC1892D00F20E12 /* Views */,
@@ -311,9 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8460871C1FC1896A00F20E12 /* ProductCell.m in Sources */,
+				846087251FC191C500F20E12 /* ProductPresenter.m in Sources */,
 				84A6C44E1FC184F000ACC036 /* ProductsViewController.m in Sources */,
 				846087211FC18ED500F20E12 /* ProductInteractor.m in Sources */,
 				84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */,
+				846087291FC191E900F20E12 /* Product.m in Sources */,
 				84A6C45C1FC184F000ACC036 /* main.m in Sources */,
 				84A6C4541FC184F000ACC036 /* Turkcell.xcdatamodeld in Sources */,
 			);
