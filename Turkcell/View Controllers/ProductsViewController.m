@@ -8,6 +8,7 @@
 
 #import "ProductsViewController.h"
 #import "ProductCell.h"
+#import "ProductInteractor.h"
 
 @interface ProductsViewController ()
 
@@ -20,7 +21,10 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    ProductInteractor *interactor = [[ProductInteractor alloc] init];
+    [interactor requestProduct];
+    
 }
 
 

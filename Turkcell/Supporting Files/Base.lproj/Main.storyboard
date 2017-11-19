@@ -79,7 +79,6 @@
                                 </constraints>
                                 <size key="customSize" width="163" height="135"/>
                                 <connections>
-                                    <outlet property="image" destination="ndg-Zh-Ce5" id="O6X-sn-C4G"/>
                                     <outlet property="productImage" destination="ndg-Zh-Ce5" id="ZTx-GD-vux"/>
                                     <outlet property="productLabel" destination="nEU-rb-te1" id="bQW-7q-Rvl"/>
                                     <outlet property="productPrice" destination="7ms-1z-EKG" id="4bI-xv-ieC"/>
