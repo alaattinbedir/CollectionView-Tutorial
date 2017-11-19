@@ -103,16 +103,17 @@
 		84A6C4481FC184F000ACC036 /* Turkcell */ = {
 			isa = PBXGroup;
 			children = (
-				84A6C4491FC184F000ACC036 /* AppDelegate.h */,
-				84A6C44A1FC184F000ACC036 /* AppDelegate.m */,
-				84A6C44C1FC184F000ACC036 /* ViewController.h */,
-				84A6C44D1FC184F000ACC036 /* ViewController.m */,
 				84A6C44F1FC184F000ACC036 /* Main.storyboard */,
 				84A6C4551FC184F000ACC036 /* Assets.xcassets */,
 				84A6C4571FC184F000ACC036 /* LaunchScreen.storyboard */,
 				84A6C45A1FC184F000ACC036 /* Info.plist */,
 				84A6C45B1FC184F000ACC036 /* main.m */,
 				84A6C4521FC184F000ACC036 /* Turkcell.xcdatamodeld */,
+				84A6C47E1FC1851600ACC036 /* Supporting Files */,
+				84A6C4491FC184F000ACC036 /* AppDelegate.h */,
+				84A6C44A1FC184F000ACC036 /* AppDelegate.m */,
+				84A6C44C1FC184F000ACC036 /* ViewController.h */,
+				84A6C44D1FC184F000ACC036 /* ViewController.m */,
 			);
 			path = Turkcell;
 			sourceTree = "<group>";
@@ -133,6 +134,13 @@
 				84A6C4721FC184F000ACC036 /* Info.plist */,
 			);
 			path = TurkcellUITests;
+			sourceTree = "<group>";
+		};
+		84A6C47E1FC1851600ACC036 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
