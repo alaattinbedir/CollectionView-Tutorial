@@ -7,8 +7,11 @@
 //
 
 #import "ProductInteractor.h"
+#import "Product.h"
 
 @implementation ProductInteractor
+
+@synthesize products;
 
 - (void) requestProduct {
     NSString *urlAsString = [NSString stringWithFormat:@"https://s3-eu-west-1.amazonaws.com/developer-application-test/cart/list"];
@@ -38,6 +41,8 @@
                             // Log NSDictionary response:
                             NSLog(@"%@",jsonResponse);
                             
+                            // Get product list from dictionaries
+                            self.products = [Product arrayWithDictionary:jsonResponse];
                             
                         }
                     }  else {

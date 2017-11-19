@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface ProductInteractor : NSObject
-- (void) requestProduct;    
+
+@property (nonatomic, strong)   NSMutableArray  *products;
+
+- (void) requestProduct;
+
 @end
