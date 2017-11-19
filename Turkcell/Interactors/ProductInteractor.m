@@ -7,11 +7,20 @@
 //
 
 #import "ProductInteractor.h"
+#import "ProductInteractorOutput.h"
 #import "Product.h"
 
 @implementation ProductInteractor
 
 @synthesize products;
+
+- (void)setViewForSetup:(UIView *)view1 {
+    NSLog(@"hop");
+}
+
+- (void)setData:(NSArray *)products{
+    NSLog(@"hop");
+}
 
 - (void) requestProduct {
     NSString *urlAsString = [NSString stringWithFormat:@"https://s3-eu-west-1.amazonaws.com/developer-application-test/cart/list"];

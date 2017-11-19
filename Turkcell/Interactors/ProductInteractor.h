@@ -11,7 +11,7 @@
 #import "ProductInteractorOutput.h"
 
 @protocol ProductInteractorOutput;
-@interface ProductInteractor : NSObject 
+@interface ProductInteractor : NSObject <ProductInteractorInput>
 
 @property (nonatomic, strong)   NSMutableArray  *products;
 @property (nonatomic, weak) id<ProductInteractorOutput> output;

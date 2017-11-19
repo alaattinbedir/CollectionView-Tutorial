@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ProductsViewController.h
 //  Turkcell
 //
 //  Created by Alaattin Bedir on 19.11.2017.
@@ -7,18 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ProductInteractorOutput.h"
 #import "ProductsViewInput.h"
 
 @protocol ProductsViewOutput;
-@protocol ProductInteractorOutput;
 
-@interface ProductsViewController : UICollectionViewController <ProductInteractorOutput,ProductsViewInput>{
+@interface ProductsViewController : UICollectionViewController <ProductsViewInput>{
     
 }
 
 @property (nonatomic, strong) id<ProductsViewOutput> output;
-@property (nonatomic, strong) id<ProductInteractorOutput> interactor; 
 
 @end
 

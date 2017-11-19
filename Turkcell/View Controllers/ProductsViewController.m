@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  ProductsViewController.m
 //  Turkcell
 //
 //  Created by Alaattin Bedir on 19.11.2017.
@@ -8,10 +8,11 @@
 
 #import "ProductsViewController.h"
 #import "ProductCell.h"
-#import "ProductInteractor.h"
 #import "Product.h"
 #import "ProductsViewOutput.h"
-#import "ProductInteractorOutput.h"
+#import "ProductPresenter.h"
+#import "ProductInteractor.h"
+
 
 @interface ProductsViewController (){
     NSArray *products;
@@ -28,11 +29,26 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self build];
     [self.output didTriggerViewReadyEvent];
+    [self.output setViewForSetup:self.view];
     
-    [self.interactor requestProduct];
+//    [self.interactor requestProduct];
     
 }
+
+- (void)build {
+    
+    ProductPresenter *presenter = [ProductPresenter new];
+    presenter.view = self;
+    
+    ProductInteractor *interactor = [ProductInteractor new];
+    interactor.output = presenter;
+    presenter.interactor = interactor;
+    self.output = presenter;
+    
+}
+
 
 #pragma mark - ProductInteractorOutput
 - (void)setData:(NSArray *)products {
