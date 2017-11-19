@@ -6,13 +6,13 @@
 //  Copyright © 2017 Turkcell. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ProductsViewController.h"
 
-@interface ViewController ()
+@interface ProductsViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ProductsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
