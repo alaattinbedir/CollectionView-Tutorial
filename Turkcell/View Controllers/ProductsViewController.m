@@ -67,12 +67,6 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     self.view.backgroundColor = [UIColor darkGrayColor];
 }
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-////    int cellWidth = ([UIScreen mainScreen].bounds.size.width - (3 * 20)) / 3;
-////    return CGSizeMake(cellWidth, cellWidth);
-//}
-
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section;
 {
     return self.products.count;
@@ -81,7 +75,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
     // we're going to use a custom UICollectionViewCell, which will hold an image and its label
-    ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];    
+    ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
     Product *product = [self.products objectAtIndex:indexPath.row];
     
     // load the image for this cell
