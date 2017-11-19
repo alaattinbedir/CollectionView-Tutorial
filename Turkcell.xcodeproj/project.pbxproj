@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C44A1FC184F000ACC036 /* AppDelegate.m */; };
+		84A6C44E1FC184F000ACC036 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C44D1FC184F000ACC036 /* ViewController.m */; };
+		84A6C4511FC184F000ACC036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6C44F1FC184F000ACC036 /* Main.storyboard */; };
+		84A6C4541FC184F000ACC036 /* Turkcell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4521FC184F000ACC036 /* Turkcell.xcdatamodeld */; };
+		84A6C4561FC184F000ACC036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A6C4551FC184F000ACC036 /* Assets.xcassets */; };
+		84A6C4591FC184F000ACC036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6C4571FC184F000ACC036 /* LaunchScreen.storyboard */; };
+		84A6C45C1FC184F000ACC036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C45B1FC184F000ACC036 /* main.m */; };
+		84A6C4661FC184F000ACC036 /* TurkcellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4651FC184F000ACC036 /* TurkcellTests.m */; };
+		84A6C4711FC184F000ACC036 /* TurkcellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4701FC184F000ACC036 /* TurkcellUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A6C4621FC184F000ACC036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A6C43E1FC184F000ACC036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A6C4451FC184F000ACC036;
+			remoteInfo = Turkcell;
+		};
+		84A6C46D1FC184F000ACC036 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A6C43E1FC184F000ACC036 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A6C4451FC184F000ACC036;
+			remoteInfo = Turkcell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84A6C4461FC184F000ACC036 /* Turkcell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turkcell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A6C4491FC184F000ACC036 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84A6C44A1FC184F000ACC036 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84A6C44C1FC184F000ACC036 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84A6C44D1FC184F000ACC036 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84A6C4501FC184F000ACC036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A6C4531FC184F000ACC036 /* Turkcell.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Turkcell.xcdatamodel; sourceTree = "<group>"; };
+		84A6C4551FC184F000ACC036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A6C4581FC184F000ACC036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A6C45A1FC184F000ACC036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A6C45B1FC184F000ACC036 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A6C4611FC184F000ACC036 /* TurkcellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurkcellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A6C4651FC184F000ACC036 /* TurkcellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurkcellTests.m; sourceTree = "<group>"; };
+		84A6C4671FC184F000ACC036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A6C46C1FC184F000ACC036 /* TurkcellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurkcellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A6C4701FC184F000ACC036 /* TurkcellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurkcellUITests.m; sourceTree = "<group>"; };
+		84A6C4721FC184F000ACC036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A6C4431FC184F000ACC036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6C45E1FC184F000ACC036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6C4691FC184F000ACC036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A6C43D1FC184F000ACC036 = {
+			isa = PBXGroup;
+			children = (
+				84A6C4481FC184F000ACC036 /* Turkcell */,
+				84A6C4641FC184F000ACC036 /* TurkcellTests */,
+				84A6C46F1FC184F000ACC036 /* TurkcellUITests */,
+				84A6C4471FC184F000ACC036 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A6C4471FC184F000ACC036 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A6C4461FC184F000ACC036 /* Turkcell.app */,
+				84A6C4611FC184F000ACC036 /* TurkcellTests.xctest */,
+				84A6C46C1FC184F000ACC036 /* TurkcellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A6C4481FC184F000ACC036 /* Turkcell */ = {
+			isa = PBXGroup;
+			children = (
+				84A6C4491FC184F000ACC036 /* AppDelegate.h */,
+				84A6C44A1FC184F000ACC036 /* AppDelegate.m */,
+				84A6C44C1FC184F000ACC036 /* ViewController.h */,
+				84A6C44D1FC184F000ACC036 /* ViewController.m */,
+				84A6C44F1FC184F000ACC036 /* Main.storyboard */,
+				84A6C4551FC184F000ACC036 /* Assets.xcassets */,
+				84A6C4571FC184F000ACC036 /* LaunchScreen.storyboard */,
+				84A6C45A1FC184F000ACC036 /* Info.plist */,
+				84A6C45B1FC184F000ACC036 /* main.m */,
+				84A6C4521FC184F000ACC036 /* Turkcell.xcdatamodeld */,
+			);
+			path = Turkcell;
+			sourceTree = "<group>";
+		};
+		84A6C4641FC184F000ACC036 /* TurkcellTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A6C4651FC184F000ACC036 /* TurkcellTests.m */,
+				84A6C4671FC184F000ACC036 /* Info.plist */,
+			);
+			path = TurkcellTests;
+			sourceTree = "<group>";
+		};
+		84A6C46F1FC184F000ACC036 /* TurkcellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84A6C4701FC184F000ACC036 /* TurkcellUITests.m */,
+				84A6C4721FC184F000ACC036 /* Info.plist */,
+			);
+			path = TurkcellUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A6C4451FC184F000ACC036 /* Turkcell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A6C4751FC184F000ACC036 /* Build configuration list for PBXNativeTarget "Turkcell" */;
+			buildPhases = (
+				84A6C4421FC184F000ACC036 /* Sources */,
+				84A6C4431FC184F000ACC036 /* Frameworks */,
+				84A6C4441FC184F000ACC036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Turkcell;
+			productName = Turkcell;
+			productReference = 84A6C4461FC184F000ACC036 /* Turkcell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84A6C4601FC184F000ACC036 /* TurkcellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A6C4781FC184F000ACC036 /* Build configuration list for PBXNativeTarget "TurkcellTests" */;
+			buildPhases = (
+				84A6C45D1FC184F000ACC036 /* Sources */,
+				84A6C45E1FC184F000ACC036 /* Frameworks */,
+				84A6C45F1FC184F000ACC036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A6C4631FC184F000ACC036 /* PBXTargetDependency */,
+			);
+			name = TurkcellTests;
+			productName = TurkcellTests;
+			productReference = 84A6C4611FC184F000ACC036 /* TurkcellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84A6C46B1FC184F000ACC036 /* TurkcellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A6C47B1FC184F000ACC036 /* Build configuration list for PBXNativeTarget "TurkcellUITests" */;
+			buildPhases = (
+				84A6C4681FC184F000ACC036 /* Sources */,
+				84A6C4691FC184F000ACC036 /* Frameworks */,
+				84A6C46A1FC184F000ACC036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A6C46E1FC184F000ACC036 /* PBXTargetDependency */,
+			);
+			name = TurkcellUITests;
+			productName = TurkcellUITests;
+			productReference = 84A6C46C1FC184F000ACC036 /* TurkcellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A6C43E1FC184F000ACC036 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Turkcell;
+				TargetAttributes = {
+					84A6C4451FC184F000ACC036 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					84A6C4601FC184F000ACC036 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84A6C4451FC184F000ACC036;
+					};
+					84A6C46B1FC184F000ACC036 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84A6C4451FC184F000ACC036;
+					};
+				};
+			};
+			buildConfigurationList = 84A6C4411FC184F000ACC036 /* Build configuration list for PBXProject "Turkcell" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A6C43D1FC184F000ACC036;
+			productRefGroup = 84A6C4471FC184F000ACC036 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A6C4451FC184F000ACC036 /* Turkcell */,
+				84A6C4601FC184F000ACC036 /* TurkcellTests */,
+				84A6C46B1FC184F000ACC036 /* TurkcellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A6C4441FC184F000ACC036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A6C4591FC184F000ACC036 /* LaunchScreen.storyboard in Resources */,
+				84A6C4561FC184F000ACC036 /* Assets.xcassets in Resources */,
+				84A6C4511FC184F000ACC036 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6C45F1FC184F000ACC036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6C46A1FC184F000ACC036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A6C4421FC184F000ACC036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A6C44E1FC184F000ACC036 /* ViewController.m in Sources */,
+				84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */,
+				84A6C45C1FC184F000ACC036 /* main.m in Sources */,
+				84A6C4541FC184F000ACC036 /* Turkcell.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6C45D1FC184F000ACC036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A6C4661FC184F000ACC036 /* TurkcellTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A6C4681FC184F000ACC036 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A6C4711FC184F000ACC036 /* TurkcellUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A6C4631FC184F000ACC036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A6C4451FC184F000ACC036 /* Turkcell */;
+			targetProxy = 84A6C4621FC184F000ACC036 /* PBXContainerItemProxy */;
+		};
+		84A6C46E1FC184F000ACC036 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A6C4451FC184F000ACC036 /* Turkcell */;
+			targetProxy = 84A6C46D1FC184F000ACC036 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A6C44F1FC184F000ACC036 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A6C4501FC184F000ACC036 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A6C4571FC184F000ACC036 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A6C4581FC184F000ACC036 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A6C4731FC184F000ACC036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84A6C4741FC184F000ACC036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A6C4761FC184F000ACC036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHRD8446CX;
+				INFOPLIST_FILE = Turkcell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.turkcell.Turkcell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84A6C4771FC184F000ACC036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHRD8446CX;
+				INFOPLIST_FILE = Turkcell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.turkcell.Turkcell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84A6C4791FC184F000ACC036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHRD8446CX;
+				INFOPLIST_FILE = TurkcellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.turkcell.TurkcellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Turkcell.app/Turkcell";
+			};
+			name = Debug;
+		};
+		84A6C47A1FC184F000ACC036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHRD8446CX;
+				INFOPLIST_FILE = TurkcellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.turkcell.TurkcellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Turkcell.app/Turkcell";
+			};
+			name = Release;
+		};
+		84A6C47C1FC184F000ACC036 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHRD8446CX;
+				INFOPLIST_FILE = TurkcellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.turkcell.TurkcellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Turkcell;
+			};
+			name = Debug;
+		};
+		84A6C47D1FC184F000ACC036 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KHRD8446CX;
+				INFOPLIST_FILE = TurkcellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tr.com.turkcell.TurkcellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Turkcell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A6C4411FC184F000ACC036 /* Build configuration list for PBXProject "Turkcell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A6C4731FC184F000ACC036 /* Debug */,
+				84A6C4741FC184F000ACC036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A6C4751FC184F000ACC036 /* Build configuration list for PBXNativeTarget "Turkcell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A6C4761FC184F000ACC036 /* Debug */,
+				84A6C4771FC184F000ACC036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A6C4781FC184F000ACC036 /* Build configuration list for PBXNativeTarget "TurkcellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A6C4791FC184F000ACC036 /* Debug */,
+				84A6C47A1FC184F000ACC036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A6C47B1FC184F000ACC036 /* Build configuration list for PBXNativeTarget "TurkcellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A6C47C1FC184F000ACC036 /* Debug */,
+				84A6C47D1FC184F000ACC036 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84A6C4521FC184F000ACC036 /* Turkcell.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84A6C4531FC184F000ACC036 /* Turkcell.xcdatamodel */,
+			);
+			currentVersion = 84A6C4531FC184F000ACC036 /* Turkcell.xcdatamodel */;
+			path = Turkcell.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84A6C43E1FC184F000ACC036 /* Project object */;
+}
