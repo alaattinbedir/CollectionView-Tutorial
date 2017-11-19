@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *productImage;
 @property (weak, nonatomic) IBOutlet UILabel *productLabel;
 @property (weak, nonatomic) IBOutlet UILabel *productPrice;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *cellActivator;
 
 
 @end

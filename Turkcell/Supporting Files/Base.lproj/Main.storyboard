@@ -62,6 +62,10 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-Zh-Ce5" userLabel="Image">
                                             <rect key="frame" x="6" y="6" width="153" height="132"/>
                                         </imageView>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-XJ-iwn">
+                                            <rect key="frame" x="72" y="62" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </activityIndicatorView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,6 +85,7 @@
                                 </constraints>
                                 <size key="customSize" width="165" height="185"/>
                                 <connections>
+                                    <outlet property="cellActivator" destination="Lix-XJ-iwn" id="3aN-ax-gs8"/>
                                     <outlet property="productImage" destination="ndg-Zh-Ce5" id="ZTx-GD-vux"/>
                                     <outlet property="productLabel" destination="nEU-rb-te1" id="bQW-7q-Rvl"/>
                                     <outlet property="productPrice" destination="7ms-1z-EKG" id="4bI-xv-ieC"/>
