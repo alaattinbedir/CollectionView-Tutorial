@@ -16,7 +16,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // initiliaze Core Data
+    [self setDataController:[MyDataController sharedClient]];
+    
     return YES;
 }
 

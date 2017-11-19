@@ -9,9 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "ProductInteractor.h"
 
+
 @interface ProductInteractorTests : XCTestCase
 
 @property (nonatomic) ProductInteractor *vcToTest;
+
 
 @end
 

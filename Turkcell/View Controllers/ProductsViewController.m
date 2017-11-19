@@ -66,6 +66,11 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     self.view.backgroundColor = [UIColor darkGrayColor];
 }
 
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+////    int cellWidth = ([UIScreen mainScreen].bounds.size.width - (3 * 20)) / 3;
+////    return CGSizeMake(cellWidth, cellWidth);
+//}
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section;
 {

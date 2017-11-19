@@ -22,6 +22,7 @@
 		84A6C45C1FC184F000ACC036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C45B1FC184F000ACC036 /* main.m */; };
 		84A6C4661FC184F000ACC036 /* TurkcellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4651FC184F000ACC036 /* TurkcellTests.m */; };
 		84A6C4711FC184F000ACC036 /* TurkcellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4701FC184F000ACC036 /* TurkcellUITests.m */; };
+		84AC8C471FC1E4E700F38143 /* MyDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC8C461FC1E2ED00F38143 /* MyDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		84A6C46C1FC184F000ACC036 /* TurkcellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurkcellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6C4701FC184F000ACC036 /* TurkcellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurkcellUITests.m; sourceTree = "<group>"; };
 		84A6C4721FC184F000ACC036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AC8C451FC1E2ED00F38143 /* MyDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDataController.h; sourceTree = "<group>"; };
+		84AC8C461FC1E2ED00F38143 /* MyDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,7 @@
 		84A6C4481FC184F000ACC036 /* Turkcell */ = {
 			isa = PBXGroup;
 			children = (
+				84AC8C431FC1E2C900F38143 /* Helpers */,
 				846087261FC191D000F20E12 /* Entities */,
 				846087221FC191AA00F20E12 /* Presenters */,
 				8460871E1FC18E9700F20E12 /* Interactors */,
@@ -229,6 +233,23 @@
 				84A6C4521FC184F000ACC036 /* Turkcell.xcdatamodeld */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84AC8C431FC1E2C900F38143 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84AC8C441FC1E2D900F38143 /* Core Data */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		84AC8C441FC1E2D900F38143 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				84AC8C451FC1E2ED00F38143 /* MyDataController.h */,
+				84AC8C461FC1E2ED00F38143 /* MyDataController.m */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AC8C471FC1E4E700F38143 /* MyDataController.m in Sources */,
 				8460871C1FC1896A00F20E12 /* ProductCell.m in Sources */,
 				846087251FC191C500F20E12 /* ProductPresenter.m in Sources */,
 				84A6C44E1FC184F000ACC036 /* ProductsViewController.m in Sources */,
