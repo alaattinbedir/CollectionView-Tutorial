@@ -42,7 +42,9 @@
                             NSLog(@"%@",jsonResponse);
                             
                             // Get product list from dictionaries
-                            self.products = [Product arrayWithDictionary:jsonResponse];
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [self.output setData:[Product arrayWithDictionary:jsonResponse]];
+                            });
                             
                         }
                     }  else {

@@ -9,8 +9,13 @@
 #import "ProductsViewController.h"
 #import "ProductCell.h"
 #import "ProductInteractor.h"
+#import "Product.h"
+#import "ProductsViewOutput.h"
+#import "ProductInteractorOutput.h"
 
-@interface ProductsViewController ()
+@interface ProductsViewController (){
+    NSArray *products;
+}
 
 @end
 
@@ -19,12 +24,27 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 
 @implementation ProductsViewController
 
+#pragma mark - Life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    ProductInteractor *interactor = [[ProductInteractor alloc] init];
-    [interactor requestProduct];
+    [self.output didTriggerViewReadyEvent];
     
+    [self.interactor requestProduct];
+    
+}
+
+#pragma mark - ProductInteractorOutput
+- (void)setData:(NSArray *)products {
+    products = products;
+    [self.collectionView reloadData];
+}
+
+#pragma mark - ProductViewInput
+
+- (void)setupInitialState {
+    self.navigationItem.title = @"Products List";
+    self.view.backgroundColor = [UIColor darkGrayColor];
 }
 
 
@@ -38,15 +58,17 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     // we're going to use a custom UICollectionViewCell, which will hold an image and its label
     ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
     
+    Product *product = [products objectAtIndex:indexPath.row];
+    
     // load the image for this cell
     NSString *imageToLoad = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     cell.productImage.image = [UIImage imageNamed:imageToLoad];
     
     // make the cell's title the actual NSIndexPath value
-    cell.productLabel.text = [NSString stringWithFormat:@"{%ld,%ld}", (long)indexPath.row, (long)indexPath.section];
+    cell.productLabel.text = product.name;
     
     // make the cell's price the actual NSIndexPath value
-    cell.productPrice.text = [NSString stringWithFormat:@"{%ld,%ld}", (long)indexPath.row, (long)indexPath.section];
+    cell.productPrice.text = [NSString stringWithFormat:@"%ld", product.price];
     
     return cell;
 }

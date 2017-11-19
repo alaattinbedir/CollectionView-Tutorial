@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductInteractorInput.h"
+#import "ProductInteractorOutput.h"
 
-@interface ProductInteractor : NSObject
+@protocol ProductInteractorOutput;
+@interface ProductInteractor : NSObject 
 
 @property (nonatomic, strong)   NSMutableArray  *products;
+@property (nonatomic, weak) id<ProductInteractorOutput> output;
 
 - (void) requestProduct;
 

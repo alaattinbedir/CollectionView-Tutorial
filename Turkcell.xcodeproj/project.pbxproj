@@ -51,6 +51,10 @@
 		846087271FC191E900F20E12 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		846087281FC191E900F20E12 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		8460872C1FC195F900F20E12 /* ProductInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductInteractorTests.m; sourceTree = "<group>"; };
+		8460872F1FC19DEE00F20E12 /* ProductInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductInteractorInput.h; sourceTree = "<group>"; };
+		846087331FC19E8000F20E12 /* ProductInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductInteractorOutput.h; sourceTree = "<group>"; };
+		846087361FC1A9BE00F20E12 /* ProductsViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductsViewInput.h; sourceTree = "<group>"; };
+		846087391FC1A9E000F20E12 /* ProductsViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductsViewOutput.h; sourceTree = "<group>"; };
 		84A6C4461FC184F000ACC036 /* Turkcell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turkcell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6C4491FC184F000ACC036 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84A6C44A1FC184F000ACC036 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 			children = (
 				84A6C44C1FC184F000ACC036 /* ProductsViewController.h */,
 				84A6C44D1FC184F000ACC036 /* ProductsViewController.m */,
+				846087361FC1A9BE00F20E12 /* ProductsViewInput.h */,
+				846087391FC1A9E000F20E12 /* ProductsViewOutput.h */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -118,6 +124,8 @@
 			children = (
 				8460871F1FC18ED500F20E12 /* ProductInteractor.h */,
 				846087201FC18ED500F20E12 /* ProductInteractor.m */,
+				8460872F1FC19DEE00F20E12 /* ProductInteractorInput.h */,
+				846087331FC19E8000F20E12 /* ProductInteractorOutput.h */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";

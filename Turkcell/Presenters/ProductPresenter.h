@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ProductInteractorOutput.h"
+#import "ProductsViewInput.h"
+#import "ProductsViewOutput.h"
 
-@interface ProductPresenter : NSObject
+@protocol ProductInteractorInput;
+@protocol ProductsViewInput;
+
+@interface ProductPresenter : NSObject <ProductsViewInput, ProductsViewOutput,ProductInteractorOutput>
+
+@property (nonatomic, strong) id<ProductsViewInput> view;
+@property (nonatomic, strong) id<ProductInteractorInput> interactor;
+
+
 
 @end
