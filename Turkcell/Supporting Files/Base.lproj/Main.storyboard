@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,6 +84,7 @@
                                     <outlet property="productImage" destination="ndg-Zh-Ce5" id="ZTx-GD-vux"/>
                                     <outlet property="productLabel" destination="nEU-rb-te1" id="bQW-7q-Rvl"/>
                                     <outlet property="productPrice" destination="7ms-1z-EKG" id="4bI-xv-ieC"/>
+                                    <segue destination="gdV-Z5-dFe" kind="push" identifier="showDetail" id="HTO-TS-UQv"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -97,6 +99,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TNv-Ec-Llf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="229.59999999999999" y="-162.3688155922039"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="fML-FY-4VU">
+            <objects>
+                <viewController id="gdV-Z5-dFe" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S92-RU-tBF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sxt-t2-iv0">
+                                <rect key="frame" x="16" y="78" width="343" height="295"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AVt-TK-2km">
+                                <rect key="frame" x="177" y="215" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="INV-Ky-Tv7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DOO-cb-OEb"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="AVt-TK-2km" id="ZK4-z2-HOG"/>
+                        <outlet property="imageView" destination="sxt-t2-iv0" id="3PM-ek-Lpd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLy-iT-L8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="-162"/>
         </scene>
     </scenes>
 </document>

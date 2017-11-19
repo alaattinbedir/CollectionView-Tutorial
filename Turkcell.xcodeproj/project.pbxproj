@@ -13,6 +13,7 @@
 		846087291FC191E900F20E12 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 846087281FC191E900F20E12 /* Product.m */; };
 		8460872D1FC195F900F20E12 /* ProductInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8460872C1FC195F900F20E12 /* ProductInteractorTests.m */; };
 		8460872E1FC1984C00F20E12 /* ProductInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 846087201FC18ED500F20E12 /* ProductInteractor.m */; };
+		847805731FC1F28F0084380A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847805721FC1F28F0084380A /* DetailViewController.m */; };
 		84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C44A1FC184F000ACC036 /* AppDelegate.m */; };
 		84A6C44E1FC184F000ACC036 /* ProductsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C44D1FC184F000ACC036 /* ProductsViewController.m */; };
 		84A6C4511FC184F000ACC036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6C44F1FC184F000ACC036 /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 		846087331FC19E8000F20E12 /* ProductInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductInteractorOutput.h; sourceTree = "<group>"; };
 		846087361FC1A9BE00F20E12 /* ProductsViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductsViewInput.h; sourceTree = "<group>"; };
 		846087391FC1A9E000F20E12 /* ProductsViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductsViewOutput.h; sourceTree = "<group>"; };
+		847805711FC1F28F0084380A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		847805721FC1F28F0084380A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		84A6C4461FC184F000ACC036 /* Turkcell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turkcell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6C4491FC184F000ACC036 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84A6C44A1FC184F000ACC036 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				84A6C44D1FC184F000ACC036 /* ProductsViewController.m */,
 				846087361FC1A9BE00F20E12 /* ProductsViewInput.h */,
 				846087391FC1A9E000F20E12 /* ProductsViewOutput.h */,
+				847805711FC1F28F0084380A /* DetailViewController.h */,
+				847805721FC1F28F0084380A /* DetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				846087211FC18ED500F20E12 /* ProductInteractor.m in Sources */,
 				84AC8C501FC1EAA100F38143 /* ProductMO.m in Sources */,
 				84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */,
+				847805731FC1F28F0084380A /* DetailViewController.m in Sources */,
 				846087291FC191E900F20E12 /* Product.m in Sources */,
 				84A6C45C1FC184F000ACC036 /* main.m in Sources */,
 				84A6C4541FC184F000ACC036 /* Turkcell.xcdatamodeld in Sources */,

@@ -13,6 +13,7 @@
 #import "ProductsViewInput.h"
 #import "ProductPresenter.h"
 #import "ProductInteractor.h"
+#import "DetailViewController.h"
 
 
 @interface ProductsViewController (){
@@ -96,9 +97,6 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         
     });
     
-    
-//    cell.productImage.image = [UIImage imageNamed:imageToLoad];
-    
     // make the cell's title the actual NSIndexPath value
     cell.productLabel.text = product.name;
     
@@ -116,11 +114,10 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     {
         NSIndexPath *selectedIndexPath = [self.collectionView indexPathsForSelectedItems][0];
         
-        // load the image, to prevent it from being cached we use 'initWithContentsOfFile'
-        NSString *imageNameToLoad = [NSString stringWithFormat:@"%ld_full", (long)selectedIndexPath.row];
-        UIImage *image = [UIImage imageNamed:imageNameToLoad];
-//        DetailViewController *detailViewController = segue.destinationViewController;
-//        detailViewController.image = image;
+        // load the product
+        Product *product = [self.products objectAtIndex:(long)selectedIndexPath.row];
+        DetailViewController *detailViewController = segue.destinationViewController;
+        detailViewController.product = product;        
     }
 }
 
