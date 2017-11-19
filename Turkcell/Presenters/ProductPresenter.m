@@ -28,9 +28,8 @@
     [self.interactor setViewForSetup:view];
 }
 
-- (void)setData:(Product *)product {
-    products= [NSArray arrayWithObject:product];
-    [self.interactor setData:products];
+- (void)setData:(NSArray *)products {    
+    [self.view setData:products];
 }
 
 

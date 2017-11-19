@@ -9,18 +9,21 @@
 #import "ProductInteractor.h"
 #import "ProductInteractorOutput.h"
 #import "Product.h"
+#import "ProductsViewOutput.h"
 
 @implementation ProductInteractor
 
 @synthesize products;
 
-- (void)setViewForSetup:(UIView *)view1 {
-    NSLog(@"hop");
-}
-
 - (void)setData:(NSArray *)products{
     NSLog(@"hop");
 }
+
+- (void)setViewForSetup:(UIView *)view {
+    NSLog(@"lalala");
+}
+
+# pragma ProductInteractorInput methods
 
 - (void) requestProduct {
     NSString *urlAsString = [NSString stringWithFormat:@"https://s3-eu-west-1.amazonaws.com/developer-application-test/cart/list"];
@@ -52,7 +55,8 @@
                             
                             // Get product list from dictionaries
                             dispatch_async(dispatch_get_main_queue(), ^{
-                                [self.output setData:[Product arrayWithDictionary:jsonResponse]];
+                                NSArray *products = [Product arrayWithDictionary:jsonResponse];
+                                [self.view setData:products];
                             });
                             
                         }

@@ -14,6 +14,6 @@
 
 - (void)didTriggerViewReadyEvent;
 - (void)setViewForSetup:(UIView *)view;
-- (void)setData:(Product *)product;
+- (void)setData:(NSArray *)products;
 
 @end

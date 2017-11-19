@@ -8,14 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "ProductsViewInput.h"
+#import "ProductsViewOutput.h"
+#import "ProductInteractorInput.h"
 
 @protocol ProductsViewOutput;
 
-@interface ProductsViewController : UICollectionViewController <ProductsViewInput>{
+@interface ProductsViewController : UICollectionViewController <ProductsViewInput,ProductsViewOutput>{
     
 }
 
 @property (nonatomic, strong) id<ProductsViewOutput> output;
+@property (nonatomic, strong) id<ProductInteractorInput> interactor;
+@property (nonatomic, strong) NSArray *products;
 
 @end
 

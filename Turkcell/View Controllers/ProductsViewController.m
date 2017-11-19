@@ -10,12 +10,13 @@
 #import "ProductCell.h"
 #import "Product.h"
 #import "ProductsViewOutput.h"
+#import "ProductsViewInput.h"
 #import "ProductPresenter.h"
 #import "ProductInteractor.h"
 
 
 @interface ProductsViewController (){
-    NSArray *products;
+    
 }
 
 @end
@@ -24,6 +25,7 @@ NSString *kDetailedViewControllerID = @"DetailView";    // view controller story
 NSString *kCellID = @"cellID";                          // UICollectionViewCell storyboard id
 
 @implementation ProductsViewController
+@synthesize products;
 
 #pragma mark - Life cycle
 - (void)viewDidLoad {
@@ -33,40 +35,41 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     [self.output didTriggerViewReadyEvent];
     [self.output setViewForSetup:self.view];
     
-//    [self.interactor requestProduct];
+    [self.interactor requestProduct];
     
 }
 
 - (void)build {
     
     ProductPresenter *presenter = [ProductPresenter new];
-    presenter.view = self;
-    
     ProductInteractor *interactor = [ProductInteractor new];
+    presenter.view = self;
     interactor.output = presenter;
+    interactor.view = presenter;
     presenter.interactor = interactor;
     self.output = presenter;
+    self.interactor = interactor;
     
 }
 
 
-#pragma mark - ProductInteractorOutput
+#pragma mark - ProductsViewOutput
 - (void)setData:(NSArray *)products {
-    products = products;
+    self.products = products;
     [self.collectionView reloadData];
 }
 
-#pragma mark - ProductViewInput
 
+#pragma mark - ProductViewInput
 - (void)setupInitialState {
-    self.navigationItem.title = @"Products List";
+    self.navigationItem.title = @"Product List";
     self.view.backgroundColor = [UIColor darkGrayColor];
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section;
 {
-    return 32;
+    return self.products.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
@@ -74,11 +77,22 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     // we're going to use a custom UICollectionViewCell, which will hold an image and its label
     ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
     
-    Product *product = [products objectAtIndex:indexPath.row];
+    Product *product = [self.products objectAtIndex:indexPath.row];
     
     // load the image for this cell
-    NSString *imageToLoad = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
-    cell.productImage.image = [UIImage imageNamed:imageToLoad];
+    dispatch_async(dispatch_get_global_queue(0,0), ^{
+        NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: product.image]];
+        if ( data == nil )
+            return;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // WARNING: is the cell still using the same data by this point??
+            cell.productImage.image = [UIImage imageWithData: data];
+        });
+        
+    });
+    
+    
+//    cell.productImage.image = [UIImage imageNamed:imageToLoad];
     
     // make the cell's title the actual NSIndexPath value
     cell.productLabel.text = product.name;

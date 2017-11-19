@@ -15,7 +15,6 @@
 @synthesize price;
 @synthesize image;
 
-
 + (id) objectWithDictionary:(NSDictionary*)dictionary
 {
     id obj = [[Product alloc] initWithDictionary:dictionary];

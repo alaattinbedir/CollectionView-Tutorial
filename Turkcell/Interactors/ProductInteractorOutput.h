@@ -10,6 +10,5 @@
 
 @protocol ProductInteractorOutput <NSObject>
 - (void)setData:(NSArray *)products;
-- (void)requestProduct;
 
 @end

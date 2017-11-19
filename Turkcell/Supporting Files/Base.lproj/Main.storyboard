@@ -33,39 +33,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W8g-CQ-1Ql">
-                            <size key="itemSize" width="163" height="135"/>
+                            <size key="itemSize" width="179" height="185"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="Zxw-No-aRN" userLabel="cellID" customClass="ProductCell">
-                                <rect key="frame" x="0.0" y="0.0" width="163" height="135"/>
+                                <rect key="frame" x="0.0" y="0.0" width="179" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="163" height="135"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="179" height="185"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEU-rb-te1" userLabel="Name">
-                                            <rect key="frame" x="6" y="88" width="151" height="20.5"/>
+                                            <rect key="frame" x="6" y="140" width="167" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ms-1z-EKG" userLabel="Price">
-                                            <rect key="frame" x="6" y="110.5" width="151" height="20.5"/>
+                                            <rect key="frame" x="6" y="162.5" width="167" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-Zh-Ce5" userLabel="Image">
-                                            <rect key="frame" x="6" y="6" width="151" height="80"/>
+                                            <rect key="frame" x="6" y="6" width="167" height="132"/>
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="7ms-1z-EKG" secondAttribute="trailing" constant="6" id="3QB-tJ-Cr7"/>
-                                    <constraint firstAttribute="bottom" secondItem="7ms-1z-EKG" secondAttribute="bottom" constant="4" id="3eJ-c1-X9g"/>
+                                    <constraint firstAttribute="bottom" secondItem="7ms-1z-EKG" secondAttribute="bottom" constant="2" id="3eJ-c1-X9g"/>
                                     <constraint firstItem="7ms-1z-EKG" firstAttribute="top" secondItem="nEU-rb-te1" secondAttribute="bottom" constant="2" id="4ci-XK-Fln"/>
                                     <constraint firstItem="nEU-rb-te1" firstAttribute="top" secondItem="ndg-Zh-Ce5" secondAttribute="bottom" constant="2" id="7gC-8M-J6d"/>
                                     <constraint firstAttribute="trailing" secondItem="nEU-rb-te1" secondAttribute="trailing" constant="6" id="Fdq-yh-WWh"/>
@@ -77,7 +78,7 @@
                                     <constraint firstItem="7ms-1z-EKG" firstAttribute="top" secondItem="nEU-rb-te1" secondAttribute="bottom" constant="2" id="nQw-DC-yau"/>
                                     <constraint firstItem="nEU-rb-te1" firstAttribute="leading" secondItem="Zxw-No-aRN" secondAttribute="leading" constant="6" id="qAV-Bc-rAM"/>
                                 </constraints>
-                                <size key="customSize" width="163" height="135"/>
+                                <size key="customSize" width="179" height="185"/>
                                 <connections>
                                     <outlet property="productImage" destination="ndg-Zh-Ce5" id="ZTx-GD-vux"/>
                                     <outlet property="productLabel" destination="nEU-rb-te1" id="bQW-7q-Rvl"/>

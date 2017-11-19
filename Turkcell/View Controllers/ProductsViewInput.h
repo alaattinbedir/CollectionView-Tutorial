@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol ProductsViewInput <NSObject>
-
 - (void)setupInitialState;
-
+- (void)setData:(NSArray *)products;
+- (void)setViewForSetup:(UIView *)view;
 @end

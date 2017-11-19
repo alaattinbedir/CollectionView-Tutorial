@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol ProductInteractorInput <NSObject>
-- (void)setData:(NSArray *)products;
+- (void)requestProduct;
 - (void)setViewForSetup:(UIView *)view;
+
 @end
