@@ -9,8 +9,6 @@
 #import "MyDataController.h"
 #import <UIKit/UIKit.h>
 
-#define PROGRAM 1
-#define COURSE 2
 
 @implementation MyDataController
 

@@ -193,12 +193,12 @@
 		84A6C4481FC184F000ACC036 /* Turkcell */ = {
 			isa = PBXGroup;
 			children = (
-				84AC8C431FC1E2C900F38143 /* Helpers */,
-				846087261FC191D000F20E12 /* Entities */,
-				846087221FC191AA00F20E12 /* Presenters */,
-				8460871E1FC18E9700F20E12 /* Interactors */,
-				8460871D1FC18E2E00F20E12 /* View Controllers */,
 				846087191FC1892D00F20E12 /* Views */,
+				8460871E1FC18E9700F20E12 /* Interactors */,
+				846087221FC191AA00F20E12 /* Presenters */,
+				846087261FC191D000F20E12 /* Entities */,
+				84AC8C431FC1E2C900F38143 /* Helpers */,
+				8460871D1FC18E2E00F20E12 /* View Controllers */,
 				84A6C4491FC184F000ACC036 /* AppDelegate.h */,
 				84A6C44A1FC184F000ACC036 /* AppDelegate.m */,
 				84A6C47E1FC1851600ACC036 /* Supporting Files */,
