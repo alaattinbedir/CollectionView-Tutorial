@@ -93,10 +93,6 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 {
     // We're going to use a custom UICollectionViewCell, which will hold an image and its label
     ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
-    if (cell) {
-        cell.productImage.image = nil;
-        [cell.cellActivator setHidden:NO];
-    }
     Product *product = [self.products objectAtIndex:indexPath.row];
     
     
