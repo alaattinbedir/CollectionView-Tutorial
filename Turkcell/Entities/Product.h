@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, assign) long price;
 @property (nonatomic, strong) NSString *image;
+@property (nonatomic, strong) NSString *desc;
 
 + (id) objectWithDictionary:(NSDictionary*)dictionary;
 - (id) initWithDictionary:(NSDictionary*)dictionary;

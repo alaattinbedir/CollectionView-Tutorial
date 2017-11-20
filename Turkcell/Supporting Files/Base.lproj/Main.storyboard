@@ -166,7 +166,10 @@
                     <navigationItem key="navigationItem" id="DOO-cb-OEb"/>
                     <connections>
                         <outlet property="activityIndicator" destination="AVt-TK-2km" id="ZK4-z2-HOG"/>
-                        <outlet property="imageView" destination="sxt-t2-iv0" id="3PM-ek-Lpd"/>
+                        <outlet property="nameLabel" destination="CZb-lu-mIl" id="AYd-AY-tpq"/>
+                        <outlet property="priceLabel" destination="9vd-vZ-igY" id="Fmw-km-kbJ"/>
+                        <outlet property="productDescLabel" destination="Egu-G8-9ln" id="nF2-LS-lNH"/>
+                        <outlet property="productImageView" destination="sxt-t2-iv0" id="Wgz-xM-Ikc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLy-iT-L8h" userLabel="First Responder" sceneMemberID="firstResponder"/>

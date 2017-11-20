@@ -14,6 +14,7 @@
 @synthesize name;
 @synthesize price;
 @synthesize image;
+@synthesize desc;
 
 + (id) objectWithDictionary:(NSDictionary*)dictionary
 {
