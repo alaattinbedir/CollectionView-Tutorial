@@ -37,7 +37,7 @@
     
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
         
-        //do something when click button
+        
     }];
     [alert addAction:okAction];
     UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
