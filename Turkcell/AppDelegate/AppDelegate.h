@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
-#import "MyDataController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
