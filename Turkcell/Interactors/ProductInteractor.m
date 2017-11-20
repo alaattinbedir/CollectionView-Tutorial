@@ -10,7 +10,7 @@
 #import "ProductInteractorOutput.h"
 #import "Product.h"
 #import "ProductsViewOutput.h"
-#import "MyDataController.h"
+#import "Utilities.h"
 
 @implementation ProductInteractor
 
@@ -48,7 +48,7 @@
                         
                         if (jsonError) {
                             // Error Parsing JSON
-                            [MyDataController.sharedClient showMessage:@"Error occured while parsing JSON" withTitle:@"Error"];
+                            [Utilities.sharedClient showMessage:@"Error occured while parsing JSON" withTitle:@"Error"];
                         } else {
                             // Success Parsing JSON
                             // Log NSDictionary response:
@@ -62,11 +62,11 @@
                         }
                     }  else {
                         //Web server is returning an error
-                        [MyDataController.sharedClient showMessage:@"Server connection failed" withTitle:@"Error"];
+                        [Utilities.sharedClient showMessage:@"Server connection failed" withTitle:@"Error"];
                     }
                 } else {
                     // Fail
-                    [MyDataController.sharedClient showMessage:error.description withTitle:@"Error"];
+                    [Utilities.sharedClient showMessage:error.description withTitle:@"Error"];
                     NSLog(@"error : %@", error.description);
                 }
             }] resume];

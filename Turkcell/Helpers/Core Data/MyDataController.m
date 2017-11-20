@@ -7,8 +7,6 @@
 //
 
 #import "MyDataController.h"
-#import <UIKit/UIKit.h>
-
 
 @implementation MyDataController
 
@@ -61,21 +59,6 @@
     
 }
 
--(void)showMessage:(NSString*)message withTitle:(NSString *)title
-{
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:title
-                                  message:message
-                                  preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
-        
-        //do something when click button
-    }];
-    [alert addAction:okAction];
-    UIViewController *vc = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
-    [vc presentViewController:alert animated:YES completion:nil];
-}
 
 - (void) saveProduct:(ProductMO *)product{
     NSManagedObjectContext *moc = self.managedObjectContext;
