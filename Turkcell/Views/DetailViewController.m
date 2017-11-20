@@ -40,6 +40,7 @@
     // If image stored then use it
     if (productMO.image) {
         dispatch_async(dispatch_get_main_queue(), ^{
+            [_activityIndicator setHidden:YES];
             self.productImageView.image = [UIImage imageWithData: productMO.image];
         });
     }else{
