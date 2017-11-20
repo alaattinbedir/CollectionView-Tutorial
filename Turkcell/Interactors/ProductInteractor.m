@@ -17,11 +17,11 @@
 @synthesize products;
 
 - (void)setData:(NSArray *)products{
-    NSLog(@"hop");
+    // stub method
 }
 
 - (void)setViewForSetup:(UIView *)view {
-    NSLog(@"lalala");
+    // stub method
 }
 
 # pragma ProductInteractorInput methods
