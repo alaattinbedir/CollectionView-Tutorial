@@ -23,7 +23,6 @@
 		84A6C4561FC184F000ACC036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A6C4551FC184F000ACC036 /* Assets.xcassets */; };
 		84A6C4591FC184F000ACC036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A6C4571FC184F000ACC036 /* LaunchScreen.storyboard */; };
 		84A6C45C1FC184F000ACC036 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C45B1FC184F000ACC036 /* main.m */; };
-		84A6C4661FC184F000ACC036 /* TurkcellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4651FC184F000ACC036 /* TurkcellTests.m */; };
 		84A6C4711FC184F000ACC036 /* TurkcellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C4701FC184F000ACC036 /* TurkcellUITests.m */; };
 		84AC8C471FC1E4E700F38143 /* MyDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC8C461FC1E2ED00F38143 /* MyDataController.m */; };
 		84AC8C501FC1EAA100F38143 /* ProductMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC8C4F1FC1EAA100F38143 /* ProductMO.m */; };
@@ -77,7 +76,6 @@
 		84A6C45A1FC184F000ACC036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A6C45B1FC184F000ACC036 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84A6C4611FC184F000ACC036 /* TurkcellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurkcellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84A6C4651FC184F000ACC036 /* TurkcellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurkcellTests.m; sourceTree = "<group>"; };
 		84A6C4671FC184F000ACC036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A6C46C1FC184F000ACC036 /* TurkcellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurkcellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6C4701FC184F000ACC036 /* TurkcellUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurkcellUITests.m; sourceTree = "<group>"; };
@@ -237,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				8460872A1FC1958200F20E12 /* Module Tests */,
-				84A6C4651FC184F000ACC036 /* TurkcellTests.m */,
 				84A6C4671FC184F000ACC036 /* Info.plist */,
 			);
 			path = TurkcellTests;
@@ -441,7 +438,6 @@
 				8460872E1FC1984C00F20E12 /* ProductInteractor.m in Sources */,
 				8460872D1FC195F900F20E12 /* ProductInteractorTests.m in Sources */,
 				847419E71FC305A5008E25BF /* ProductPresenterTests.m in Sources */,
-				84A6C4661FC184F000ACC036 /* TurkcellTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
