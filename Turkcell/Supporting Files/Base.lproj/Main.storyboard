@@ -89,7 +89,7 @@
                                     <outlet property="productImage" destination="ndg-Zh-Ce5" id="ZTx-GD-vux"/>
                                     <outlet property="productLabel" destination="nEU-rb-te1" id="bQW-7q-Rvl"/>
                                     <outlet property="productPrice" destination="7ms-1z-EKG" id="4bI-xv-ieC"/>
-                                    <segue destination="gdV-Z5-dFe" kind="push" identifier="showDetail" id="HTO-TS-UQv"/>
+                                    <segue destination="gdV-Z5-dFe" kind="show" identifier="showDetail" id="HTO-TS-UQv"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
