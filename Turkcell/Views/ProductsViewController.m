@@ -45,9 +45,9 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     ProductPresenter *presenter = [ProductPresenter new];
     ProductInteractor *interactor = [ProductInteractor new];
     presenter.view = self;
-    interactor.output = presenter;
-    interactor.view = presenter;
     presenter.interactor = interactor;
+    interactor.output = presenter;
+    interactor.view = presenter;    
     self.output = presenter;
     self.interactor = interactor;
     
