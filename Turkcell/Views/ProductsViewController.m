@@ -65,6 +65,23 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 - (void)setupInitialState {
     self.navigationItem.title = @"Product List";
     self.view.backgroundColor = [UIColor darkGrayColor];
+    
+    // Setting collection view layout
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(170, 190)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    [flowLayout setMinimumInteritemSpacing:2];
+    [flowLayout setMinimumLineSpacing:2];
+    [flowLayout setHeaderReferenceSize:CGSizeMake(0, 2)];
+    [self.collectionView setCollectionViewLayout:flowLayout];
+    
+    // Initialize image cache
+    if(_imageCache==nil)
+    {
+        _imageCache=[[NSCache alloc]init];        
+    }
+    [_imageCache setEvictsObjectsWithDiscardedContent:NO];
+    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section;
@@ -76,7 +93,12 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 {
     // We're going to use a custom UICollectionViewCell, which will hold an image and its label
     ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
+    if (cell) {
+        cell.productImage.image = nil;
+        [cell.cellActivator setHidden:NO];
+    }
     Product *product = [self.products objectAtIndex:indexPath.row];
+    
     
     // We will use NSCache to use image later.
     UIImage *image = [_imageCache objectForKey:product.productId];
@@ -88,7 +110,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     {
         // load the image for this cell
         [cell.cellActivator startAnimating];
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,0), ^{
             NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: product.image]];
             if ( data == nil )
                 return;
@@ -107,10 +129,10 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         });
     }
     
-    // make the cell's title the actual NSIndexPath value
+    // set the product's name
     cell.productLabel.text = product.name;
     
-    // make the cell's price the actual NSIndexPath value
+    // set the product's price
     cell.productPrice.text = [NSString stringWithFormat:@"%ld", product.price];
     
     return cell;
