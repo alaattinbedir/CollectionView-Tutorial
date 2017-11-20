@@ -45,7 +45,6 @@
             if ( data == nil )
                 return;
             dispatch_async(dispatch_get_main_queue(), ^{
-                // WARNING: is the cell still using the same data by this point??
                 [_activityIndicator stopAnimating];
                 [_activityIndicator setHidden:YES];
                 self.productImageView.image = [UIImage imageWithData: data];
