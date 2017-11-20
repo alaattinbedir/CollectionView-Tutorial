@@ -96,6 +96,22 @@
     }
 }
 
+-(void) deleteProduct :(NSNumber*) productId{
+    NSManagedObjectContext *moc = self.managedObjectContext;
+    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
+    fetch.entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:moc];
+    fetch.predicate = [NSPredicate predicateWithFormat:@"productId == %@", productId];
+    NSArray *array = [moc executeFetchRequest:fetch error:nil];
+    
+    for (NSManagedObject *managedObject in array) {
+        [moc deleteObject:managedObject];
+    }
+    NSError *error;
+    if (![moc save:&error]) {
+        NSLog(@"Failed to save - error: %@", [error localizedDescription]);
+    }
+}
+
 -(void) deleteProducts{
     NSManagedObjectContext *moc = self.managedObjectContext;
     NSFetchRequest *fetch = [[NSFetchRequest alloc] init];

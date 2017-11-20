@@ -20,6 +20,7 @@
 - (void) saveProducts:(NSArray *)products;
 - (ProductMO*) getProduct:(NSNumber*) productId;
 - (NSArray*) getProducts;
+- (void) deleteProduct :(NSNumber*) productId;
 - (void) deleteProducts;
 
 @end
