@@ -42,6 +42,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 
 - (void)build {
     
+    // Build VIPER structure
     ProductPresenter *presenter = [ProductPresenter new];
     ProductInteractor *interactor = [ProductInteractor new];
     presenter.view = self;
@@ -91,10 +92,9 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
-    // We're going to use a custom UICollectionViewCell, which will hold an image and its label
+    // We will use a custom UICollectionViewCell
     ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
     Product *product = [self.products objectAtIndex:indexPath.row];
-    
     
     // We will use NSCache to use image later.
     UIImage *image = [_imageCache objectForKey:product.productId];
