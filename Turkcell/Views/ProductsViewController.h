@@ -13,7 +13,7 @@
 
 @protocol ProductsViewOutput;
 
-@interface ProductsViewController : UICollectionViewController <ProductsViewInput,ProductsViewOutput>{
+@interface ProductsViewController : UICollectionViewController <ProductsViewInput>{
     
 }
 

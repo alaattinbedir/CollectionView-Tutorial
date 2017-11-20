@@ -69,14 +69,6 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     
 }
 
-- (void)didTriggerViewReadyEvent {
-    // stub method
-}
-
-
-- (void)setViewForSetup:(UIView *)view {
-    // stub method
-}
 
 
 

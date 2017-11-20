@@ -12,5 +12,5 @@
 @protocol ProductsViewInput <NSObject>
 - (void)setupInitialState;
 - (void)setData:(NSArray *)products;
-- (void)setViewForSetup:(UIView *)view;
+
 @end
