@@ -38,7 +38,8 @@
     NSNumber *productId = [f numberFromString:self.product.productId];
     ProductMO *productMO = (ProductMO*)[[MyDataController sharedClient] getProduct:productId];
     // If image stored then use it
-    if (productMO.image) {
+//    productMO.image
+    if (NO) {
         [_activityIndicator stopAnimating];
         [_activityIndicator setHidden:YES];
         self.productImageView.image = [UIImage imageWithData: productMO.image];
