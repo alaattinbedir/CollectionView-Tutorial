@@ -32,35 +32,35 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="5Ff-vD-yet">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="W8g-CQ-1Ql">
-                            <size key="itemSize" width="165" height="185"/>
+                            <size key="itemSize" width="170" height="190"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="Zxw-No-aRN" userLabel="cellID" customClass="ProductCell">
-                                <rect key="frame" x="0.0" y="0.0" width="165" height="185"/>
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="165" height="185"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="190"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEU-rb-te1" userLabel="Name">
-                                            <rect key="frame" x="6" y="140" width="153" height="20.5"/>
+                                            <rect key="frame" x="6" y="145" width="158" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ms-1z-EKG" userLabel="Price">
-                                            <rect key="frame" x="6" y="162.5" width="153" height="20.5"/>
+                                            <rect key="frame" x="6" y="167.5" width="158" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ndg-Zh-Ce5" userLabel="Image">
-                                            <rect key="frame" x="6" y="6" width="153" height="132"/>
+                                            <rect key="frame" x="6" y="6" width="158" height="137"/>
                                         </imageView>
                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-XJ-iwn">
                                             <rect key="frame" x="72" y="62" width="20" height="20"/>
@@ -83,7 +83,7 @@
                                     <constraint firstItem="7ms-1z-EKG" firstAttribute="top" secondItem="nEU-rb-te1" secondAttribute="bottom" constant="2" id="nQw-DC-yau"/>
                                     <constraint firstItem="nEU-rb-te1" firstAttribute="leading" secondItem="Zxw-No-aRN" secondAttribute="leading" constant="6" id="qAV-Bc-rAM"/>
                                 </constraints>
-                                <size key="customSize" width="165" height="185"/>
+                                <size key="customSize" width="170" height="190"/>
                                 <connections>
                                     <outlet property="cellActivator" destination="Lix-XJ-iwn" id="3aN-ax-gs8"/>
                                     <outlet property="productImage" destination="ndg-Zh-Ce5" id="ZTx-GD-vux"/>
@@ -114,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxt-t2-iv0">
-                                <rect key="frame" x="16" y="77" width="343" height="339.5"/>
+                                <rect key="frame" x="16" y="81" width="343" height="335"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZb-lu-mIl">
                                 <rect key="frame" x="16" y="424.5" width="343" height="20.5"/>
@@ -148,7 +148,7 @@
                             <constraint firstItem="AVt-TK-2km" firstAttribute="leading" secondItem="INV-Ky-Tv7" secondAttribute="leading" constant="177" id="Rz3-OZ-PVq"/>
                             <constraint firstItem="CZb-lu-mIl" firstAttribute="top" secondItem="sxt-t2-iv0" secondAttribute="bottom" constant="8" id="SEU-Tm-EuK"/>
                             <constraint firstItem="Egu-G8-9ln" firstAttribute="top" secondItem="9vd-vZ-igY" secondAttribute="bottom" constant="8" id="T5i-hS-W1T"/>
-                            <constraint firstItem="sxt-t2-iv0" firstAttribute="top" secondItem="INV-Ky-Tv7" secondAttribute="top" constant="13" id="YcK-Vw-zkw"/>
+                            <constraint firstItem="sxt-t2-iv0" firstAttribute="top" secondItem="INV-Ky-Tv7" secondAttribute="top" constant="17" id="YcK-Vw-zkw"/>
                             <constraint firstItem="Egu-G8-9ln" firstAttribute="leading" secondItem="INV-Ky-Tv7" secondAttribute="leading" constant="16" id="aGG-4n-Bbu"/>
                             <constraint firstItem="AVt-TK-2km" firstAttribute="top" secondItem="INV-Ky-Tv7" secondAttribute="top" constant="172" id="ct8-8E-pvx"/>
                             <constraint firstItem="INV-Ky-Tv7" firstAttribute="trailing" secondItem="sxt-t2-iv0" secondAttribute="trailing" constant="16" id="jPv-mm-i5d"/>
