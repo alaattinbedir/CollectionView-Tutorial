@@ -96,7 +96,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
     Product *product = [self.products objectAtIndex:indexPath.row];
     
-    // We will use NSCache to use image later.
+    // We should cache image to use it later while scrolling.
     UIImage *image = [_imageCache objectForKey:product.productId];
     if(image)
     {
