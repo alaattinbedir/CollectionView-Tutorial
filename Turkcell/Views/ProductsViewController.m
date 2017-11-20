@@ -144,7 +144,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     return cell;
 }
 
-// User pressed a collection item, load and set the image on the detailViewController
+// User pressed a product load the image and other properties on the detailViewController
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"showDetail"])
