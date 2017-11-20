@@ -17,7 +17,7 @@
 
 
 @interface ProductsViewController (){
-    
+    NSCache *_imageCache;
 }
 
 @end
@@ -74,23 +74,38 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
-    // we're going to use a custom UICollectionViewCell, which will hold an image and its label
+    // We're going to use a custom UICollectionViewCell, which will hold an image and its label
     ProductCell *cell = [cv dequeueReusableCellWithReuseIdentifier:kCellID forIndexPath:indexPath];
     Product *product = [self.products objectAtIndex:indexPath.row];
     
-    // load the image for this cell
-    [cell.cellActivator startAnimating];
-    dispatch_async(dispatch_get_global_queue(0,0), ^{
-        NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: product.image]];
-        if ( data == nil )
-            return;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [cell.cellActivator stopAnimating];
-            [cell.cellActivator setHidden:YES];
-            cell.productImage.image = [UIImage imageWithData: data];
+    // We will use NSCache to use image later.
+    UIImage *image = [_imageCache objectForKey:product.productId];
+    if(image)
+    {
+        cell.productImage.image = image;
+    }
+    else
+    {
+        // load the image for this cell
+        [cell.cellActivator startAnimating];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0), ^{
+            NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: product.image]];
+            if ( data == nil )
+                return;
+            UIImage *image = [UIImage imageWithData: data];
+            
+            if (image) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [cell.cellActivator stopAnimating];
+                    [cell.cellActivator setHidden:YES];
+                    cell.productImage.image = image;
+                });
+                
+                // Set image to cache with productId so that it can be use later while scrolling content
+                [_imageCache setObject:image forKey:product.productId];
+            }
         });
-        
-    });
+    }
     
     // make the cell's title the actual NSIndexPath value
     cell.productLabel.text = product.name;
