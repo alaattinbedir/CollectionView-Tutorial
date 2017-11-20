@@ -16,7 +16,6 @@
 
 + (instancetype)sharedClient;
 - (void)initializeCoreData;
--(void)showMessage:(NSString*)message withTitle:(NSString *)title;
 - (void) saveProduct:(ProductMO *)product;
 - (ProductMO*) getProduct:(NSNumber*) productId;
 - (NSArray*) getProducts;
