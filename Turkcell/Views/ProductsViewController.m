@@ -69,9 +69,6 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     
 }
 
-
-
-
 #pragma mark - ProductViewInput
 - (void)setupInitialState {
     self.navigationItem.title = @"Product List";
