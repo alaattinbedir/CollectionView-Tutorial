@@ -36,8 +36,8 @@
     f.numberStyle = NSNumberFormatterDecimalStyle;
     NSNumber *productId = [f numberFromString:self.product.productId];
     ProductMO *productMO = (ProductMO*)[[MyDataController sharedClient] getProduct:productId];
+
     // If image stored then use it
-//    productMO.image
     if (productMO.image) {
         dispatch_async(dispatch_get_main_queue(), ^{
             self.productImageView.image = [UIImage imageWithData: productMO.image];
