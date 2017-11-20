@@ -32,4 +32,28 @@
     [self.vcToTest didTriggerViewReadyEvent];
 }
 
+- (void) testSetViewForSetup {
+    // 1. given
+    UIView *testView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+    // 2. when
+    [self.vcToTest setViewForSetup:testView];
+    
+    // 3. then
+    XCTAssertEqual(testView, testView, "Same view");
+}
+
+- (void) testSetData {
+    // 1. given
+    NSArray *products = [[NSArray alloc] initWithObjects:@"Apple",@"Orange", nil];
+    
+    // 2. when
+    [self.vcToTest setData:products];
+    
+    // 3. then
+    XCTAssertEqual(products.count, products.count, "Same count");
+}
+
+
+
 @end
