@@ -155,6 +155,7 @@
 		8460872A1FC1958200F20E12 /* Module Tests */ = {
 			isa = PBXGroup;
 			children = (
+				847805761FC2BEFF0084380A /* Presenters */,
 				8460872B1FC195AB00F20E12 /* Interactors */,
 			);
 			path = "Module Tests";
@@ -182,6 +183,13 @@
 			children = (
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		847805761FC2BEFF0084380A /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		84A6C43D1FC184F000ACC036 = {
