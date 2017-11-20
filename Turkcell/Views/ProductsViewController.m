@@ -110,8 +110,8 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
             NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: product.image]];
             if ( data == nil )
                 return;
-            UIImage *image = [UIImage imageWithData: data];
             
+            UIImage *image = [UIImage imageWithData: data];
             if (image) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [cell.cellActivator stopAnimating];
