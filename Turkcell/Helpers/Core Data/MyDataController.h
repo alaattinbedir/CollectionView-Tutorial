@@ -17,6 +17,7 @@
 + (instancetype)sharedClient;
 - (void)initializeCoreData;
 - (void) saveProduct:(ProductMO *)product;
+- (void) saveProducts:(NSArray *)products;
 - (ProductMO*) getProduct:(NSNumber*) productId;
 - (NSArray*) getProducts;
 

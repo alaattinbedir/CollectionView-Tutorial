@@ -14,6 +14,7 @@
 #import "ProductPresenter.h"
 #import "ProductInteractor.h"
 #import "DetailViewController.h"
+#import "MyDataController.h"
 
 
 @interface ProductsViewController (){
@@ -59,6 +60,11 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 - (void)setData:(NSArray *)products {
     self.products = products;
     [self.collectionView reloadData];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,0), ^{
+        [[MyDataController sharedClient] saveProducts:products];
+    });
+    
 }
 
 

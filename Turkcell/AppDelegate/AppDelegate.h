@@ -15,7 +15,6 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
-//@property (strong, nonatomic) MyDataController *dataController;
 
 - (void)saveContext;
 

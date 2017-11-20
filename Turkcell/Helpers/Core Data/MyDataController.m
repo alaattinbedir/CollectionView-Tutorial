@@ -7,6 +7,8 @@
 //
 
 #import "MyDataController.h"
+#import "Product.h"
+#import <UIKit/UIKit.h>
 
 @implementation MyDataController
 
@@ -60,20 +62,38 @@
 }
 
 
-- (void) saveProduct:(ProductMO *)product{
+- (void) saveProduct:(Product *)product{
     NSManagedObjectContext *moc = self.managedObjectContext;
     
     ProductMO *productMO = [NSEntityDescription insertNewObjectForEntityForName:@"Product" inManagedObjectContext:moc];
-    [productMO setValue:productMO.productId forKey:@"productId"];
-    [productMO setValue:productMO.name forKey:@"name"];
-    [productMO setValue:productMO.price forKey:@"price"];
-    [productMO setValue:productMO.image forKey:@"image"];
+    [productMO setValue:product.productId forKey:@"productId"];
+    [productMO setValue:product.name forKey:@"name"];
+    [productMO setValue:[NSNumber numberWithLong:product.price] forKey:@"price"];
+    [productMO setValue:product.image forKey:@"image"];
     
     NSError *error;
     if (![moc save:&error]) {
         NSLog(@"Failed to save - error: %@", [error localizedDescription]);
     }
 
+}
+
+- (void) saveProducts:(NSArray *)products{
+    NSManagedObjectContext *moc = self.managedObjectContext;
+    for (Product *item in products) {
+        
+        ProductMO *productMO = [NSEntityDescription insertNewObjectForEntityForName:@"Product" inManagedObjectContext:moc];
+        [productMO setValue:item.productId forKey:@"productId"];
+        [productMO setValue:item.name forKey:@"name"];
+        [productMO setValue:[NSNumber numberWithLong:item.price] forKey:@"price"];
+        
+        NSData * data = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: item.image]];
+        [productMO setValue:data forKey:@"image"];
+        NSError *error;
+        if (![moc save:&error]) {
+            NSLog(@"Failed to save - error: %@", [error localizedDescription]);
+        }
+    }
 }
 
 - (ProductMO*) getProduct:(NSNumber*) productId {
