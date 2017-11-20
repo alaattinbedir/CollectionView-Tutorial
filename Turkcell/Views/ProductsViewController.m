@@ -63,6 +63,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     
     // DB operations should be process in background thread to prevent to lock ui thread.
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,0), ^{
+        [[MyDataController sharedClient] deleteProducts];
         [[MyDataController sharedClient] saveProducts:products];
     });
     
@@ -86,7 +87,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     // Initialize image cache
     if(_imageCache==nil)
     {
-        _imageCache=[[NSCache alloc]init];        
+        _imageCache=[[NSCache alloc]init];
     }
     [_imageCache setEvictsObjectsWithDiscardedContent:NO];
     
@@ -151,7 +152,7 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
         // load the product
         Product *product = [self.products objectAtIndex:(long)selectedIndexPath.row];
         DetailViewController *detailViewController = segue.destinationViewController;
-        detailViewController.product = product;        
+        detailViewController.product = product;
     }
 }
 
@@ -163,3 +164,4 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
 
 
 @end
+

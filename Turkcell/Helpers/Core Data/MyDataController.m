@@ -75,7 +75,7 @@
     if (![moc save:&error]) {
         NSLog(@"Failed to save - error: %@", [error localizedDescription]);
     }
-
+    
 }
 
 - (void) saveProducts:(NSArray *)products{
@@ -96,20 +96,37 @@
     }
 }
 
-- (ProductMO*) getProduct:(NSNumber*) productId {
-        NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
-        NSManagedObjectContext *moc = self.managedObjectContext;
-        fetch.entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:moc];
-        fetch.predicate = [NSPredicate predicateWithFormat:@"productId == %@", productId];
-        NSArray *array = [moc executeFetchRequest:fetch error:nil];
+-(void) deleteProducts{
+    NSManagedObjectContext *moc = self.managedObjectContext;
+    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
+    fetch.entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:moc];
+    NSArray *array = [moc executeFetchRequest:fetch error:nil];
     
-        if ([array count] > 0) {
-            NSLog(@"%lu",(unsigned long)[array count]);
-            ProductMO *product = (ProductMO*)moc;
-            return product;
-        }else{
-            return nil;
+    for (NSManagedObject *managedObject in array) {
+        [moc deleteObject:managedObject];
+    }
+    NSError *error;
+    if (![moc save:&error]) {
+        NSLog(@"Failed to save - error: %@", [error localizedDescription]);
+    }
+}
+
+- (ProductMO*) getProduct:(NSNumber*) productId {
+    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
+    NSManagedObjectContext *moc = self.managedObjectContext;
+    fetch.entity = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:moc];
+    fetch.predicate = [NSPredicate predicateWithFormat:@"productId == %@", productId];
+    NSArray *array = [moc executeFetchRequest:fetch error:nil];
+    
+    if ([array count] > 0) {
+        ProductMO *product = nil;
+        for (NSManagedObject *managedObject in array) {
+            product = (ProductMO*)managedObject;
         }
+        return product;
+    }else{
+        return nil;
+    }
 }
 
 
@@ -125,3 +142,4 @@
 
 
 @end
+

@@ -33,7 +33,10 @@
     self.productDescLabel.text = self.product.desc;
     [_activityIndicator startAnimating];
     
-    ProductMO *productMO = [[MyDataController sharedClient] getProduct:[NSNumber numberWithInt:(int)self.product.productId]];
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    NSNumber *productId = [f numberFromString:self.product.productId];
+    ProductMO *productMO = (ProductMO*)[[MyDataController sharedClient] getProduct:productId];
     // If image stored then use it
     if (productMO.image) {
         [_activityIndicator stopAnimating];
@@ -60,3 +63,4 @@
 }
 
 @end
+
