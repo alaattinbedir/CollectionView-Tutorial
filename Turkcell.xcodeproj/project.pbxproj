@@ -13,6 +13,7 @@
 		846087291FC191E900F20E12 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 846087281FC191E900F20E12 /* Product.m */; };
 		8460872D1FC195F900F20E12 /* ProductInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8460872C1FC195F900F20E12 /* ProductInteractorTests.m */; };
 		8460872E1FC1984C00F20E12 /* ProductInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 846087201FC18ED500F20E12 /* ProductInteractor.m */; };
+		847419E71FC305A5008E25BF /* ProductPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847419E61FC305A5008E25BF /* ProductPresenterTests.m */; };
 		847805731FC1F28F0084380A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847805721FC1F28F0084380A /* DetailViewController.m */; };
 		849D3B581FC2DF660058F580 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 849D3B571FC2DF660058F580 /* Utilities.m */; };
 		84A6C44B1FC184F000ACC036 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A6C44A1FC184F000ACC036 /* AppDelegate.m */; };
@@ -59,6 +60,7 @@
 		846087331FC19E8000F20E12 /* ProductInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductInteractorOutput.h; sourceTree = "<group>"; };
 		846087361FC1A9BE00F20E12 /* ProductsViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductsViewInput.h; sourceTree = "<group>"; };
 		846087391FC1A9E000F20E12 /* ProductsViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductsViewOutput.h; sourceTree = "<group>"; };
+		847419E61FC305A5008E25BF /* ProductPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductPresenterTests.m; sourceTree = "<group>"; };
 		847805711FC1F28F0084380A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		847805721FC1F28F0084380A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		849D3B561FC2DF660058F580 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		847805761FC2BEFF0084380A /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				847419E61FC305A5008E25BF /* ProductPresenterTests.m */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 			files = (
 				8460872E1FC1984C00F20E12 /* ProductInteractor.m in Sources */,
 				8460872D1FC195F900F20E12 /* ProductInteractorTests.m in Sources */,
+				847419E71FC305A5008E25BF /* ProductPresenterTests.m in Sources */,
 				84A6C4661FC184F000ACC036 /* TurkcellTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
