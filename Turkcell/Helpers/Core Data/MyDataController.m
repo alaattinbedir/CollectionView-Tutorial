@@ -83,7 +83,7 @@
     for (Product *item in products) {
         
         ProductMO *productMO = [NSEntityDescription insertNewObjectForEntityForName:@"Product" inManagedObjectContext:moc];
-        [productMO setValue:[NSNumber numberWithLong:item.productId]  forKey:@"productId"];
+        [productMO setValue:item.productId forKey:@"productId"];
         [productMO setValue:item.name forKey:@"name"];
         [productMO setValue:[NSNumber numberWithLong:item.price] forKey:@"price"];
         

@@ -10,7 +10,7 @@
 
 @interface ProductMO : NSManagedObject
 
-@property (nonatomic, strong) NSNumber *productId;
+@property (nonatomic, strong) NSString *productId;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSNumber *price;
 @property (nonatomic, strong) NSData *image;
