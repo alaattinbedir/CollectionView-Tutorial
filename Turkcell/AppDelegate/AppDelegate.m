@@ -17,9 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // initiliaze Core Data
-    [self setDataController:[MyDataController sharedClient]];
-    
+//    // initiliaze Core Data
+//    [self setDataController:[MyDataController sharedClient]];
+//
     return YES;
 }
 
