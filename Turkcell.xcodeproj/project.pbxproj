@@ -111,23 +111,16 @@
 		846087191FC1892D00F20E12 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8460871A1FC1896A00F20E12 /* ProductCell.h */,
-				8460871B1FC1896A00F20E12 /* ProductCell.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8460871D1FC18E2E00F20E12 /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
 				84A6C44C1FC184F000ACC036 /* ProductsViewController.h */,
 				84A6C44D1FC184F000ACC036 /* ProductsViewController.m */,
 				846087361FC1A9BE00F20E12 /* ProductsViewInput.h */,
 				846087391FC1A9E000F20E12 /* ProductsViewOutput.h */,
 				847805711FC1F28F0084380A /* DetailViewController.h */,
 				847805721FC1F28F0084380A /* DetailViewController.m */,
+				8460871A1FC1896A00F20E12 /* ProductCell.h */,
+				8460871B1FC1896A00F20E12 /* ProductCell.m */,
 			);
-			path = "View Controllers";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8460871E1FC18E9700F20E12 /* Interactors */ = {
@@ -162,17 +155,17 @@
 		8460872A1FC1958200F20E12 /* Module Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8460872B1FC195AB00F20E12 /* Interactor */,
+				8460872B1FC195AB00F20E12 /* Interactors */,
 			);
 			path = "Module Tests";
 			sourceTree = "<group>";
 		};
-		8460872B1FC195AB00F20E12 /* Interactor */ = {
+		8460872B1FC195AB00F20E12 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
 				8460872C1FC195F900F20E12 /* ProductInteractorTests.m */,
 			);
-			path = Interactor;
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		84A6C43D1FC184F000ACC036 = {
@@ -203,7 +196,6 @@
 				846087221FC191AA00F20E12 /* Presenters */,
 				846087261FC191D000F20E12 /* Entities */,
 				84AC8C431FC1E2C900F38143 /* Helpers */,
-				8460871D1FC18E2E00F20E12 /* View Controllers */,
 				84A6C4491FC184F000ACC036 /* AppDelegate.h */,
 				84A6C44A1FC184F000ACC036 /* AppDelegate.m */,
 				84A6C47E1FC1851600ACC036 /* Supporting Files */,

@@ -49,7 +49,7 @@
     [self setManagedObjectContext:moc];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSURL *documentsURL = [[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-    NSURL *storeURL = [documentsURL URLByAppendingPathComponent:@"Akademim.sqlite"];
+    NSURL *storeURL = [documentsURL URLByAppendingPathComponent:@"Turkcell.sqlite"];
     
     dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
         NSError *error = nil;
