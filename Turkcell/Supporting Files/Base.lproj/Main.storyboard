@@ -134,8 +134,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AVt-TK-2km">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AVt-TK-2km">
                                 <rect key="frame" x="177" y="211" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -144,16 +145,12 @@
                             <constraint firstItem="Egu-G8-9ln" firstAttribute="top" secondItem="9vd-vZ-igY" secondAttribute="bottom" constant="8" id="DBz-Id-OVT"/>
                             <constraint firstItem="INV-Ky-Tv7" firstAttribute="trailing" secondItem="Egu-G8-9ln" secondAttribute="trailing" constant="16" id="DzS-xJ-zj4"/>
                             <constraint firstItem="CZb-lu-mIl" firstAttribute="top" secondItem="sxt-t2-iv0" secondAttribute="bottom" constant="26.5" id="LMs-gC-ltc"/>
-                            <constraint firstItem="AVt-TK-2km" firstAttribute="centerX" secondItem="S92-RU-tBF" secondAttribute="centerX" id="PdT-qk-kzb"/>
-                            <constraint firstItem="AVt-TK-2km" firstAttribute="leading" secondItem="INV-Ky-Tv7" secondAttribute="leading" constant="177" id="Rz3-OZ-PVq"/>
                             <constraint firstItem="sxt-t2-iv0" firstAttribute="top" secondItem="INV-Ky-Tv7" secondAttribute="top" constant="17" id="YcK-Vw-zkw"/>
                             <constraint firstItem="Egu-G8-9ln" firstAttribute="leading" secondItem="INV-Ky-Tv7" secondAttribute="leading" constant="16" id="aGG-4n-Bbu"/>
-                            <constraint firstItem="AVt-TK-2km" firstAttribute="top" secondItem="INV-Ky-Tv7" secondAttribute="top" constant="147" id="ct8-8E-pvx"/>
                             <constraint firstItem="INV-Ky-Tv7" firstAttribute="trailing" secondItem="sxt-t2-iv0" secondAttribute="trailing" constant="16" id="jPv-mm-i5d"/>
                             <constraint firstItem="INV-Ky-Tv7" firstAttribute="trailing" secondItem="9vd-vZ-igY" secondAttribute="trailing" constant="16" id="kFg-dC-BEW"/>
                             <constraint firstItem="INV-Ky-Tv7" firstAttribute="trailing" secondItem="CZb-lu-mIl" secondAttribute="trailing" constant="16" id="lge-gH-Xu1"/>
                             <constraint firstItem="CZb-lu-mIl" firstAttribute="leading" secondItem="INV-Ky-Tv7" secondAttribute="leading" constant="16" id="qGB-wQ-lAD"/>
-                            <constraint firstItem="INV-Ky-Tv7" firstAttribute="trailing" secondItem="AVt-TK-2km" secondAttribute="trailing" constant="178" id="qQO-pI-7Ep"/>
                             <constraint firstItem="INV-Ky-Tv7" firstAttribute="bottom" secondItem="Egu-G8-9ln" secondAttribute="bottom" constant="202" id="sW6-IA-q2j"/>
                             <constraint firstItem="9vd-vZ-igY" firstAttribute="leading" secondItem="INV-Ky-Tv7" secondAttribute="leading" constant="16" id="vMd-NU-bb0"/>
                             <constraint firstItem="sxt-t2-iv0" firstAttribute="leading" secondItem="INV-Ky-Tv7" secondAttribute="leading" constant="16" id="vyJ-jJ-8Sq"/>

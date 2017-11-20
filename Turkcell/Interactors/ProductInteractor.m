@@ -37,9 +37,6 @@
     [[session dataTaskWithURL:[NSURL URLWithString:encodedUrlAsString]
             completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                 
-                NSLog(@"RESPONSE: %@",response);
-                NSLog(@"DATA: %@",data);
-                
                 if (!error) {
                     // Success
                     if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
@@ -51,8 +48,6 @@
                             [Utilities.sharedClient showMessage:@"Error occured while parsing JSON" withTitle:@"Error"];
                         } else {
                             // Success Parsing JSON
-                            // Log NSDictionary response:
-                            NSLog(@"%@",jsonResponse);
                             // Get product list from dictionaries
                             dispatch_async(dispatch_get_main_queue(), ^{
                                 NSArray *products = [Product arrayWithDictionary:jsonResponse];
