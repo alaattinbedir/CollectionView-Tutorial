@@ -63,8 +63,12 @@ NSString *kCellID = @"cellID";                          // UICollectionViewCell 
     
     // DB operations should be process in background thread to prevent to lock ui thread.
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND,0), ^{
-        [[MyDataController sharedClient] deleteProducts];
+        NSArray *array = [[MyDataController sharedClient] getProducts];
+        if ([array count] > 0) {
+            [[MyDataController sharedClient] deleteProducts];
+        }
         [[MyDataController sharedClient] saveProducts:products];
+        
     });
     
 }
