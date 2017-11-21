@@ -37,7 +37,7 @@
     NSNumber *productId = [f numberFromString:self.product.productId];
     ProductMO *productMO = (ProductMO*)[[MyDataController sharedClient] getProduct:productId];
 
-    // If image stored then use it
+    // If product image stored then use it
     if (productMO.image) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [_activityIndicator setHidden:YES];
